@@ -1,10 +1,10 @@
 export class Keyboard {
   #switchEl;
   constructor() {
-    this.#addSwitchEl();
+    this.#registerElements();
     this.#registerEvents();
   }
-  #addSwitchEl() {
+  #registerElements() {
     this.#switchEl = document.getElementById("switch");
   }
   #registerEvents() {
