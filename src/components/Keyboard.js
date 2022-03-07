@@ -1,13 +1,19 @@
 export class Keyboard {
   #switchEl;
+  #fontSelectEl;
+  #keyboardEl;
   constructor() {
-    this.#registerElements();
+    this.#initElements();
     this.#registerEvents();
   }
-  #registerElements() {
+  #initElements() {
     this.#switchEl = document.getElementById("switch");
+    /* TODO: fontSelectEl */
+    /* TODO: containerEl */
   }
   #registerEvents() {
     this.#switchEl.addEventListener("click", () => {});
+    /* fontSelect */
+    /* containerEl */
   }
 }
